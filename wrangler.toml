@@ -1,8 +1,8 @@
-name = "omid-edge-panel"
+name = "panel"
 main = "_worker.js"
 compatibility_date = "2025-11-04"
 keep_vars = true
 
-#[[kv_namespaces]]
-#binding = "KV"			# The KV binding name is fixed by default
-#id = ""				#KV数据库id
+[[kv_namespaces]]
+binding = "KV"
+id = "4d96f276a3e04b6eb62706f844d59b96"
