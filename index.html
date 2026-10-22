@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#070813">
-<meta name="description" content="Omid Edge Panel — your own Cloudflare edge, run like a command deck. Build configs, hand out subscriptions, stay in control. Free For All, forged by OMID-IRAN.">
-<title>Omid Edge Panel — Free For All</title>
+<meta name="theme-color" content="#0a0418">
+<meta name="description" content="PURPLE — your own Cloudflare edge. Build configs, hand out subscriptions, stay in control. Free For All.">
+<title>PURPLE — Free For All</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:dark;--void:#070813;--panel:#0f1330;--violet:#8b5cf6;--violet-d:#6d28d9;--cyan:#45e9f7;--pink:#ff4fd8;--green:#55f4c5;
---text:#f1f3ff;--muted:#9aa5c8;--line:rgba(139,92,246,.35);--max:1180px;
+:root{color-scheme:dark;--void:#0a0418;--panel:#1a0a30;--violet:#a855f7;--violet-d:#7e22ce;--cyan:#d8b4fe;--pink:#e9d5ff;--green:#55f4c5;
+--text:#f3e8ff;--muted:#c4a5e8;--line:rgba(168,85,247,.35);--max:1180px;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *,*::before,*::after{box-sizing:inherit;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
@@ -22,7 +22,7 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
 .orb{font-family:'Orbitron',sans-serif}
 /* background */
-.bg{position:fixed;inset:0;z-index:-3;background:radial-gradient(ellipse 70% 50% at 50% -5%,rgba(109,40,217,.55),transparent 70%),radial-gradient(ellipse 40% 35% at 90% 40%,rgba(69,233,247,.10),transparent 70%),radial-gradient(ellipse 40% 35% at 5% 75%,rgba(255,79,216,.10),transparent 70%)}
+.bg{position:fixed;inset:0;z-index:-3;background:radial-gradient(ellipse 70% 50% at 50% -5%,rgba(126,34,206,.55),transparent 70%),radial-gradient(ellipse 40% 35% at 90% 40%,rgba(192,132,252,.10),transparent 70%),radial-gradient(ellipse 40% 35% at 5% 75%,rgba(168,85,247,.10),transparent 70%)}
 .floor{position:fixed;left:0;right:0;bottom:0;height:55vh;z-index:-2;overflow:hidden;pointer-events:none;mask-image:linear-gradient(to top,#000 10%,transparent);-webkit-mask-image:linear-gradient(to top,#000 10%,transparent)}
 .floor::before{content:"";position:absolute;inset:-100% -50% 0;background:linear-gradient(var(--violet) 1px,transparent 1px) 0 0/100% 60px,linear-gradient(90deg,var(--violet) 1px,transparent 1px) 0 0/60px 100%;opacity:.3;transform:perspective(440px) rotateX(62deg);transform-origin:50% 100%;animation:run 2.6s linear infinite}
 @keyframes run{to{background-position:0 60px,0 0}}
@@ -30,18 +30,18 @@ a{color:inherit;text-decoration:none}
 .btn{--c:14px;display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 28px;font:700 18px 'Rajdhani',sans-serif;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;position:relative;overflow:hidden;border:0;
 clip-path:polygon(var(--c) 0,100% 0,100% calc(100% - var(--c)),calc(100% - var(--c)) 100%,0 100%,0 var(--c));transition:filter .2s,transform .12s}
 .btn svg{width:20px;height:20px;flex:none}
-.btn.main{color:#fff;background:linear-gradient(100deg,var(--violet-d),var(--violet) 55%,#6366f1)}
+.btn.main{color:#fff;background:linear-gradient(100deg,var(--violet-d),var(--violet) 55%,#c084fc)}
 .btn.ghost{color:var(--text);background:linear-gradient(var(--panel),var(--panel)) padding-box;box-shadow:inset 0 0 0 1.5px var(--line)}
 .btn::before{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);transition:left .6s}
-.btn:hover{filter:brightness(1.18) drop-shadow(0 0 14px rgba(139,92,246,.8))}
+.btn:hover{filter:brightness(1.18) drop-shadow(0 0 14px rgba(168,85,247,.8))}
 .btn:hover::before{left:130%}
 .btn:active{transform:scale(.98)}
 .btn.sm{height:42px;padding:0 20px;font-size:16px;--c:10px}
 /* nav */
-.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(7,8,19,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(10,4,24,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand svg{width:38px;height:38px;filter:drop-shadow(0 0 8px rgba(139,92,246,.8))}
+.brand svg{width:38px;height:38px;filter:drop-shadow(0 0 8px rgba(168,85,247,.8))}
 .brand b{font:900 16px 'Orbitron',sans-serif;letter-spacing:.08em;display:block;line-height:1.1}
 .brand small{font-size:12px;color:var(--muted);letter-spacing:.14em}
 .links{display:flex;gap:30px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:16px;color:var(--muted)}
@@ -64,14 +64,14 @@ h1::after{content:attr(data-t);position:absolute;inset:0;color:var(--cyan);mix-b
 .boot{margin-top:20px;min-height:26px;font:600 17px/1.4 'Rajdhani',ui-monospace,monospace;color:var(--green);letter-spacing:.04em}.boot::after{content:"▌";margin-left:4px;animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
 /* core */
 .core-wrap{position:relative;aspect-ratio:1;max-width:520px;width:100%;margin:0 auto;display:grid;place-items:center;perspective:900px}
-.core{width:100%;height:100%;transition:transform .15s ease-out;filter:drop-shadow(0 0 36px rgba(139,92,246,.65))}
+.core{width:100%;height:100%;transition:transform .15s ease-out;filter:drop-shadow(0 0 36px rgba(168,85,247,.65))}
 .r1{transform-origin:200px 200px;animation:rot 22s linear infinite}
 .r2{transform-origin:200px 200px;animation:rot 12s linear infinite reverse}
 .r3{transform-origin:200px 200px;animation:rot 7s linear infinite}
 @keyframes rot{to{transform:rotate(360deg)}}
 .bolt{animation:flick 3.4s infinite}
 @keyframes flick{0%,90%,100%{opacity:1}92%{opacity:.3}94%{opacity:1}96%{opacity:.5}}
-.chip{position:absolute;display:flex;gap:10px;align-items:center;padding:10px 16px;background:rgba(15,19,48,.9);border:1px solid var(--line);font-size:15px;line-height:1.2;
+.chip{position:absolute;display:flex;gap:10px;align-items:center;padding:10px 16px;background:rgba(26,10,48,.9);border:1px solid var(--line);font-size:15px;line-height:1.2;
 clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);animation:bob 5s ease-in-out infinite alternate}
 .chip b{display:block;font-size:16px}
 .chip small{color:var(--muted);font-size:13px}
@@ -81,7 +81,7 @@ clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 
 .chip em{font-style:normal;color:var(--cyan);font:700 18px 'Orbitron',sans-serif}
 @keyframes bob{to{translate:0 -12px}}
 /* ticker */
-.ticker{border-block:1px solid var(--line);background:rgba(15,19,48,.7);overflow:hidden;white-space:nowrap}
+.ticker{border-block:1px solid var(--line);background:rgba(26,10,48,.7);overflow:hidden;white-space:nowrap}
 .ticker div{display:inline-flex;gap:46px;padding:14px 0;animation:tick 28s linear infinite;font:700 17px 'Orbitron',sans-serif;letter-spacing:.14em;color:var(--lilac,#c4b5fd)}
 .ticker span::before{content:"◆";color:var(--cyan);margin-right:46px;font-size:12px}
 @keyframes tick{to{transform:translateX(-50%)}}
@@ -92,32 +92,32 @@ clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 
 .sec .intro{max-width:600px;color:var(--muted);font-size:20px}
 .load{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px;margin-top:44px}
 .slots{display:flex;flex-direction:column;gap:12px}
-.slot{--c:16px;display:flex;align-items:center;gap:16px;text-align:left;padding:18px 20px;cursor:pointer;color:var(--muted);font:700 20px 'Rajdhani',sans-serif;background:var(--panel);border:0;box-shadow:inset 0 0 0 1.5px rgba(139,92,246,.2);
+.slot{--c:16px;display:flex;align-items:center;gap:16px;text-align:left;padding:18px 20px;cursor:pointer;color:var(--muted);font:700 20px 'Rajdhani',sans-serif;background:var(--panel);border:0;box-shadow:inset 0 0 0 1.5px rgba(168,85,247,.2);
 clip-path:polygon(var(--c) 0,100% 0,100% calc(100% - var(--c)),calc(100% - var(--c)) 100%,0 100%,0 var(--c));transition:background .2s,color .2s,box-shadow .2s,transform .2s}
 .slot svg{width:30px;height:30px;flex:none;color:var(--violet)}
 .slot:hover{color:var(--text);transform:translateX(6px)}
-.slot[aria-selected=true]{color:#fff;background:linear-gradient(100deg,rgba(109,40,217,.65),rgba(15,19,48,.95));box-shadow:inset 0 0 0 1.5px var(--cyan),0 0 26px rgba(69,233,247,.15);transform:translateX(10px)}
+.slot[aria-selected=true]{color:#fff;background:linear-gradient(100deg,rgba(126,34,206,.65),rgba(26,10,48,.95));box-shadow:inset 0 0 0 1.5px var(--cyan),0 0 26px rgba(192,132,252,.15);transform:translateX(10px)}
 .slot[aria-selected=true] svg{color:var(--cyan)}
-.detail{--c:26px;position:relative;min-height:320px;padding:38px 38px 34px;background:linear-gradient(155deg,rgba(25,31,72,.95),rgba(10,13,34,.97));border:0;
+.detail{--c:26px;position:relative;min-height:320px;padding:38px 38px 34px;background:linear-gradient(155deg,rgba(37,18,64,.95),rgba(15,4,29,.97));border:0;
 clip-path:polygon(var(--c) 0,100% 0,100% calc(100% - var(--c)),calc(100% - var(--c)) 100%,0 100%,0 var(--c));box-shadow:inset 0 0 0 1.5px var(--line)}
 .detail::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(255,255,255,.022) 0 1px,transparent 1px 3px)}
 .pane{display:none}
 .pane.on{display:block;animation:swap .35s ease-out}
 @keyframes swap{from{opacity:0;translate:0 10px}}
-.pane .ico{width:64px;height:64px;color:var(--cyan);filter:drop-shadow(0 0 14px rgba(69,233,247,.7))}
+.pane .ico{width:64px;height:64px;color:var(--cyan);filter:drop-shadow(0 0 14px rgba(192,132,252,.7))}
 .pane h3{font:900 28px 'Orbitron',sans-serif;margin:18px 0 12px}
 .pane p{font-size:21px;color:#c5cdea;max-width:520px}
 .pane .tag{display:inline-block;margin-top:22px;padding:5px 14px;font-weight:700;font-size:15px;letter-spacing:.1em;color:var(--green);border:1px solid rgba(85,244,197,.4);background:rgba(85,244,197,.07)}
 /* about */
-.about{--c:30px;display:grid;grid-template-columns:1.4fr .6fr;gap:30px;padding:48px;background:linear-gradient(135deg,rgba(109,40,217,.28),rgba(15,19,48,.92) 60%);
+.about{--c:30px;display:grid;grid-template-columns:1.4fr .6fr;gap:30px;padding:48px;background:linear-gradient(135deg,rgba(126,34,206,.28),rgba(26,10,48,.92) 60%);
 clip-path:polygon(var(--c) 0,100% 0,100% calc(100% - var(--c)),calc(100% - var(--c)) 100%,0 100%,0 var(--c));box-shadow:inset 0 0 0 1.5px var(--line)}
 .about p{font-size:20px;color:#c5cdea;max-width:640px}
 .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.tags span{padding:6px 14px;font-weight:700;font-size:14px;letter-spacing:.12em;color:var(--cyan);border:1px solid rgba(69,233,247,.4);background:rgba(69,233,247,.06)}
+.tags span{padding:6px 14px;font-weight:700;font-size:14px;letter-spacing:.12em;color:var(--cyan);border:1px solid rgba(192,132,252,.4);background:rgba(192,132,252,.06)}
 .sigbox{display:grid;place-items:center;text-align:center;border-left:1px dashed var(--line);padding-left:30px}
 .mono{font:900 clamp(30px,4vw,46px) 'Orbitron',sans-serif;background:linear-gradient(95deg,var(--violet),var(--pink),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
 .sigbox small{color:var(--muted);letter-spacing:.16em;font-size:14px}
-.cta{margin-top:30px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:32px 40px;border:1.5px solid var(--line);background:rgba(15,19,48,.7)}
+.cta{margin-top:30px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:32px 40px;border:1.5px solid var(--line);background:rgba(26,10,48,.7)}
 .cta h3{font:900 24px 'Orbitron',sans-serif;margin-bottom:4px}
 .cta p{color:var(--muted)}
 .foot{border-top:1px solid var(--line);padding:30px 0 36px;font-size:16px;color:var(--muted)}
@@ -147,13 +147,13 @@ clip-path:polygon(var(--c) 0,100% 0,100% calc(100% - var(--c)),calc(100% - var(-
 <div class="bg"></div><div class="floor"></div>
 
 <header class="top"><div class="wrap nav">
-  <a class="brand" href="#home" aria-label="Omid Edge Panel home">
-    <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="n" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bb63ff"/><stop offset=".52" stop-color="#6d74ff"/><stop offset="1" stop-color="#45e9f7"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="17" fill="#0d1130" stroke="url(#n)" stroke-width="3"/><circle cx="32" cy="32" r="18" fill="none" stroke="url(#n)" stroke-width="5"/><path d="M35.5 17.5 22.7 34.2h9.1l-3.1 12.4 13.1-18h-9.3z" fill="#f4fdff"/></svg>
-    <span><b>OMID EDGE PANEL</b><small>OMID-IRAN / EDGE SYSTEMS</small></span>
+  <a class="brand" href="#home" aria-label="PURPLE home">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="n" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d8b4fe"/><stop offset=".52" stop-color="#a855f7"/><stop offset="1" stop-color="#c084fc"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="17" fill="#1a0a30" stroke="url(#n)" stroke-width="3"/><circle cx="32" cy="32" r="18" fill="none" stroke="url(#n)" stroke-width="5"/><path d="M35.5 17.5 22.7 34.2h9.1l-3.1 12.4 13.1-18h-9.3z" fill="#f4fdff"/></svg>
+    <span><b>PURPLE</b><small>EDGE SYSTEMS</small></span>
   </a>
-  <nav class="links" aria-label="Main navigation"><a href="#features">Power-Ups</a><a href="#about">The Crew</a><a href="https://github.com/omidiran-gaming/Omid-Edge-Panel" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+  <nav class="links" aria-label="Main navigation"><a href="#features">Power-Ups</a><a href="#about">The Crew</a><a href="https://github.com/aghabanafshi6122/karbarg" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
   <div class="acts">
-    <a class="btn ghost sm" href="https://github.com/omidiran-gaming/Omid-Edge-Panel" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a class="btn ghost sm" href="https://github.com/aghabanafshi6122/karbarg" target="_blank" rel="noopener noreferrer">GitHub</a>
     <a class="btn main sm" href="/login">Open Panel</a>
   </div>
 </div></header>
@@ -167,22 +167,22 @@ clip-path:polygon(var(--c) 0,100% 0,100% calc(100% - var(--c)),calc(100% - var(-
     <p class="boot" id="boot" aria-hidden="true"></p>
     <div class="ctas">
       <a class="btn main" href="/login"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>Press Start</a>
-      <a class="btn ghost" href="https://github.com/omidiran-gaming/Omid-Edge-Panel" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>Peek Under the Hood</a>
+      <a class="btn ghost" href="https://github.com/aghabanafshi6122/karbarg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>Peek Under the Hood</a>
     </div>
-    <p class="sig"><b>Free For All</b> · Forged by OMID-IRAN, open to every player</p>
+    <p class="sig"><b>Free For All</b> · Forged by PURPLE, open to every player</p>
   </div>
 
   <div class="core-wrap" id="coreWrap" aria-label="Animated edge core illustration">
     <svg class="core" id="core" viewBox="0 0 400 400" aria-hidden="true">
-      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bb63ff"/><stop offset=".5" stop-color="#6d74ff"/><stop offset="1" stop-color="#45e9f7"/></linearGradient><radialGradient id="rg"><stop stop-color="#2a1b66"/><stop offset="1" stop-color="#0a0d26"/></radialGradient></defs>
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d8b4fe"/><stop offset=".5" stop-color="#a855f7"/><stop offset="1" stop-color="#c084fc"/></linearGradient><radialGradient id="rg"><stop stop-color="#4c1d95"/><stop offset="1" stop-color="#1a0a30"/></radialGradient></defs>
       <circle class="r1" cx="200" cy="200" r="188" fill="none" stroke="url(#g)" stroke-width="2.5" stroke-dasharray="120 26 8 26"/>
-      <circle class="r2" cx="200" cy="200" r="158" fill="none" stroke="#45e9f7" stroke-opacity=".55" stroke-width="2" stroke-dasharray="3 12"/>
-      <circle class="r3" cx="200" cy="200" r="128" fill="none" stroke="#ff4fd8" stroke-opacity=".6" stroke-width="3" stroke-dasharray="60 90"/>
+      <circle class="r2" cx="200" cy="200" r="158" fill="none" stroke="#c084fc" stroke-opacity=".55" stroke-width="2" stroke-dasharray="3 12"/>
+      <circle class="r3" cx="200" cy="200" r="128" fill="none" stroke="#e9d5ff" stroke-opacity=".6" stroke-width="3" stroke-dasharray="60 90"/>
       <circle cx="200" cy="200" r="98" fill="url(#rg)" stroke="url(#g)" stroke-width="7"/>
       <path class="bolt" d="M214 128 164 205h36l-12 68 52-82h-37z" fill="#f4fdff" stroke="#f4fdff" stroke-linejoin="round" stroke-width="2"/>
     </svg>
-    <div class="chip a"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h16"/></svg><span><b>Custom Loadouts</b><small>Configs, your way</small></span></div>
-    <div class="chip b"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#45e9f7" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7z"/></svg><span><b>Edge-native</b><small>Workers &amp; Pages ready</small></span></div>
+    <div class="chip a"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h16"/></svg><span><b>Custom Loadouts</b><small>Configs, your way</small></span></div>
+    <div class="chip b"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7z"/></svg><span><b>Edge-native</b><small>Workers &amp; Pages ready</small></span></div>
     <div class="chip c"><em id="ping">—</em><span><b>Live Ping</b><small>you → your edge</small></span></div>
   </div>
 </section>
@@ -212,10 +212,10 @@ clip-path:polygon(var(--c) 0,100% 0,100% calc(100% - var(--c)),calc(100% - var(-
   <div class="about">
     <div>
       <h2>Built for the squad.<br><em>Open to every player.</em></h2>
-      <p>Omid Edge Panel is a community project from the OMID-IRAN crew. One idea drives it: great tools shouldn't hide behind a paywall or a maze of menus. Clear workflows, a polished edge experience, and a codebase anyone can poke at, fork, and make better.</p>
+      <p>PURPLE is a community project. One idea drives it: great tools shouldn't hide behind a paywall or a maze of menus. Clear workflows, a polished edge experience, and a codebase anyone can poke at, fork, and make better.</p>
       <div class="tags"><span>SELF-MANAGED</span><span>WORKERS + PAGES</span><span>COMMUNITY CO-OP</span><span>FREE FOR ALL</span></div>
     </div>
-    <div class="sigbox"><div><div class="mono">OMID.IR</div><small>GUILD LEAD · OMID-IRAN</small></div></div>
+    <div class="sigbox"><div><div class="mono">PURPLE</div><small>EDGE SYSTEMS</small></div></div>
   </div>
   <div class="cta">
     <div><h3>Ready to join the lobby?</h3><p>Jump into the panel, read the source, or find the squad on Telegram.</p></div>
@@ -228,9 +228,9 @@ clip-path:polygon(var(--c) 0,100% 0,100% calc(100% - var(--c)),calc(100% - var(-
 </main>
 
 <footer class="foot"><div class="wrap">
-  <span>© <span id="year">2026</span> <b>OMID EDGE PANEL</b> · Free For All</span>
-  <nav><a href="https://github.com/omidiran-gaming/Omid-Edge-Panel" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://t.me/omid_gamingORG" target="_blank" rel="noopener noreferrer">Telegram</a><a href="#about">About</a><a href="#home" aria-label="Back to top">Respawn ↑</a></nav>
-  <span>Forged with passion by <b>OMID-IRAN</b></span>
+  <span>© <span id="year">2026</span> <b>PURPLE</b> · Free For All</span>
+  <nav><a href="https://github.com/aghabanafshi6122/karbarg" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://t.me/omid_gamingORG" target="_blank" rel="noopener noreferrer">Telegram</a><a href="#about">About</a><a href="#home" aria-label="Back to top">Respawn ↑</a></nav>
+  <span>Forged with passion by <b>PURPLE</b></span>
 </div></footer>
 
 <script>
